@@ -2,7 +2,7 @@ name: Move opened issues into the No Status column in the Writers project
 
 on:
   issues:
-    types: -opened
+    types: [opened]
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
