@@ -1,15 +1,14 @@
 name: Move opened issues into the No Status column in the Writers project
 on:
   issues:
-    types:
-      - opened
+    types: [opened]
 jobs:
   automate-project-columns:
     runs-on: ubuntu-latest
     steps:
       - uses: alex-page/github-project-automation-plus@v0.8.3
         with:
-          project: Writers
-          column: No Status
+          project: 'Writers'
+          column: 'No Status'
           repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
 
