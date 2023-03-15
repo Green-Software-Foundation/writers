@@ -1,21 +1,15 @@
 name: Move opened issues into the No Status column in the Writers project
-
 on:
   issues:
-    types: [opened]
-env:
-  MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-
+    types:
+      - opened
 jobs:
-  assign_one_project:
+  automate-project-columns:
     runs-on: ubuntu-latest
-    name: Assign to Writers Project
     steps:
-    - name: Assign NEW issues to Writers project
-      uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event.action == 'opened'
-      with:
-        project: 'https://github.com/orgs/Green-Software-Foundation/projects/22'
-        column_name: 'No Status'
-
+      - uses: alex-page/github-project-automation-plus@5bcba1c1c091a222584d10913e5c060d32c44044
+        with:
+          project: Writers
+          column: No Status
+          repo-token: ${{ secrets.MY_GITHUB_TOKEN }}
 
