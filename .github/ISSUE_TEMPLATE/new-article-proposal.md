@@ -28,6 +28,7 @@ _To be filled out later_
 ## Checklist
 - [ ] Idea discussed and selected for writing. _After checking this box, set Status to "Todo" under "Articles" project_
 - [ ] Author identified. _After checking this box Assign issue to the Author_
+- [ ] Scheduled in calendar
 - [ ] Google doc link created in GSF drive. 
 - [ ] In progress. _After checking this box, set Status to "In Progress" under "Articles" project_
 - [ ] Draft created. _After checking this box, set Status to "In Review" under "Articles" project. Assign issue to Reviewer/Author during the back-and-forth_
